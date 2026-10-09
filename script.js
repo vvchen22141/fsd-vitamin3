@@ -43,7 +43,7 @@ const question2 = () => {
   /** YOUR CODE HERE */
   
   addTodoButton.addEventListener("click", () => {
-    if (taskName.value === "") {
+    if (taskName.value.trim() === "") {
       return;
     }
     const li = document.createElement("li")
