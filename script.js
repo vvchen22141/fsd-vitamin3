@@ -43,6 +43,9 @@ const question2 = () => {
   /** YOUR CODE HERE */
   
   addTodoButton.addEventListener("click", () => {
+    if (taskName.value === "") {
+      return;
+    }
     const li = document.createElement("li")
     li.textContent = taskName.value;
     todoListUl.append(li);
