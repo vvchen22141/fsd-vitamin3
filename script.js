@@ -20,14 +20,14 @@ const question1 = () => {
       // Close the sidebar
       /** YOUR CODE HERE */
       sidebar.classList.add("opened");
-      sidebarButton.innerHTML = "‹";
+      sidebarButton.textContent = "‹";
       
       
     } else {
       // Open the sidebar
       /** YOUR CODE HERE */
       sidebar.classList.remove("opened");
-      sidebarButton.innerHTML = "›";
+      sidebarButton.textContent = "›";
     }
   });
 };
